@@ -1,0 +1,8 @@
+---
+- name: Using ansible-pull to test ansible on dynamic hosts
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Install tmux
+      ansible.builtin.apt:
+        name: tmux
