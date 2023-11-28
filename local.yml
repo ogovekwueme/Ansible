@@ -1,6 +1,6 @@
 ---
 - name: Using ansible-pull to test ansible on dynamic hosts
-  hosts: 127.0.0.1
+  hosts: localhhost
   become: true
   tasks:
     - name: Install tmux
